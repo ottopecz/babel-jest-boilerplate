@@ -1,0 +1,39 @@
+{
+  "name": "babel-jest-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate code for a node, babel, jest project",
+  "main": "src/index.js",
+  "scripts": {
+    "clean": "rm -rf build && mkdir build",
+    "start": "node -r @babel/register .",
+    "watch": "nodemon -r @babel/register .",
+    "build": "babel ./src -d ./build --copy-files",
+    "test": "NODE_ENV=test jest",
+    "test:watch": "yarn test --watch",
+    "test:coverage": "yarn test --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ottopecz/babel-jest-boilerplate.git"
+  },
+  "keywords": [
+    "node",
+    "babel",
+    "jest",
+    "boilerplate"
+  ],
+  "author": "Otto Pecz <otto.pecz@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ottopecz/babel-jest-boilerplate/issues"
+  },
+  "homepage": "https://github.com/ottopecz/babel-jest-boilerplate#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/register": "^7.7.4",
+    "core-js": "^3.4.5",
+    "regenerator-runtime": "^0.13.3"
+  }
+}
