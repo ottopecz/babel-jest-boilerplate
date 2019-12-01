@@ -8,9 +8,7 @@
     "start": "node -r @babel/register .",
     "watch": "nodemon -r @babel/register .",
     "build": "babel ./src -d ./build --copy-files",
-    "test": "NODE_ENV=test jest",
-    "test:watch": "yarn test --watch",
-    "test:coverage": "yarn test --coverage"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -33,7 +31,9 @@
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
     "@babel/register": "^7.7.4",
+    "babel-jest": "^24.9.0",
     "core-js": "^3.4.5",
+    "jest": "^24.9.0",
     "regenerator-runtime": "^0.13.3"
   }
 }
