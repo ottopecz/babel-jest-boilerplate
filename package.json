@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/ottopecz/babel-jest-boilerplate#readme",
   "devDependencies": {
-    "@babel/cli": "^7.7.4",
+    "@babel/cli": "^7.12.1",
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
     "@babel/register": "^7.7.4",
@@ -35,5 +35,8 @@
     "core-js": "^3.4.5",
     "jest": "^24.9.0",
     "regenerator-runtime": "^0.13.3"
+  },
+  "dependencies": {
+    "random-words": "^1.1.1"
   }
 }
